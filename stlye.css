@@ -1,41 +1,48 @@
 *{
-    padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.Container{
-    margin: auto;
-    height: 100vh;
-     background-color: black;
-     display: grid;
-     grid-template-columns: repeat(3, 15%);
-     grid-template-rows: repeat(3, 25%);
-     gap: 2%;
-     justify-content: center;
-     align-content: center;
-     position: relative;
-}
-.Container button{
-    font-size: 350%;
+    padding: 0;
+    box-sizing: -box;
     border: none;
-    font-weight: 900;
-    background-color: red;
-    color: white;
-    border-radius: 20%;
-    cursor: pointer;
-    transition: background-color 0.5s, color  0.5s;
+    outline: none;
 }
-.Container button:hover{
-    background-color:rgb(249, 135, 135);
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    display: flex;
+    height: 100vh;
 }
-.Container button:active{
-    background-color:rgb(247, 197, 197);
-    color: black;
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    max-width: 50rem;
+    min-width: 15rem;
+    flex: 1;
+    background-color: rgb(8, 25, 255);
+    border-radius: 1.5rem;
+    overflow: hidden;
+ 
 }
-.Container h1{
-    position: absolute;
-    color: white;
-    left: 90vh;
-    top: 3%;
+.container h1{
+    background-color: white;
+    padding-left: 2rem;
+    padding: 2rem;
+}
+.buttoncontainer{
     
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+   
+
+    
+}   
+.buttoncontainer >button{
+    font-size: 3rem;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius:1rem;
 }
