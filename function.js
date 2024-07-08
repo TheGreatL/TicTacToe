@@ -23,10 +23,8 @@ function clickedButton(num){
     turn1= true;
    }
    countMoves++;
-   if(countMoves>=5){
+   if(countMoves>=3){
     checkWinner();
-    countMoves=countMoves==6? 0: countMoves;
-   
    }
 }
 function checkWinner(){
